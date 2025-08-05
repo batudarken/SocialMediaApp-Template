@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 SocialApp - Modern Android Social Media Template
 
 ## 📱 Production Ready Social Media App Template
@@ -58,3 +59,7 @@ cd YOUR-PROJECT
 ```bash
 # Change package name
 find . -name "*.kt" -exec sed -i 's/com\.example\.socialmediaapp/YOUR_PACKAGE/g' {}
+=======
+# SocialMediaApp-Template
+🚀 Modern Android Social Media App Template - Production Ready
+>>>>>>> e81f216491699eaab63badac8b32fc30fb22989f
