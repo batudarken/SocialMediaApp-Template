@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- Base application theme. -->
     <style name="Theme.SocialMediaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -165,3 +166,19 @@
 
 </resources>
 
+=======
+    <style name="Theme.SocialMediaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="android:statusBarColor">@color/primary_color</item>
+    </style>
+    
+    <style name="Theme.SocialMediaApp.Splash" parent="Theme.SocialMediaApp">
+        <item name="android:windowBackground">@color/primary_color</item>
+    </style>
+</resources>
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929

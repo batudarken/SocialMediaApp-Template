@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.socialmediaapp">
+=======
+    xmlns:tools="http://schemas.android.com/tools">
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+=======
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929
 
     <application
         android:name=".SocialMediaApplication"
         android:allowBackup="true"
+<<<<<<< HEAD
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -27,12 +37,24 @@
             android:name=".presentation.ui.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+=======
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SocialMediaApp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SocialMediaApp.Splash">
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
         <!-- Register Activity -->
         <activity
             android:name=".presentation.ui.RegisterActivity"
@@ -68,8 +90,22 @@
             android:name=".presentation.ui.SettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+=======
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".EmailVerificationActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
+        <activity android:name=".LiveStreamActivity" android:exported="false" />
+        <activity android:name=".CameraActivity" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:exported="false" />
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929
 
     </application>
 
 </manifest>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929

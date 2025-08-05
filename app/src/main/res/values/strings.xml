@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- App Name -->
     <string name="app_name">SocialConnect</string>
     <string name="app_logo">Uygulama Logosu</string>
@@ -119,3 +120,7 @@
     <string name="ok">Tamam</string>
 </resources>
 
+=======
+    <string name="app_name">SocialApp</string>
+</resources>
+>>>>>>> f16e7245bf0ccfe7acf07fed48acfc7439d92929

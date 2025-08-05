@@ -1,0 +1,47 @@
+name: 🚀 Build APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Code
+      uses: actions/checkout@v4
+    
+    - name: ☕ Setup JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: 📦 Cache Gradle
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*') }}
+        
+    - name: 🔧 Grant Execute Permission
+      run: chmod +x gradlew
+      
+    - name: 🏗️ Build Debug APK
+      run: ./gradlew assembleDebug
+      
+    - name: 📱 Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: SocialApp-${{ github.sha }}-debug.apk
+        path: app/build/outputs/apk/debug/app-debug.apk
+        retention-days: 30
+        
+    - name: 📊 APK Info
+      run: |
+        APK_SIZE=$(du -h app/build/outputs/apk/debug/app-debug.apk | cut -f1)
+        echo "📱 APK Size: $APK_SIZE"
+        echo "✅ Build completed successfully!"
