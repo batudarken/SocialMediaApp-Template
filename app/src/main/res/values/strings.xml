@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SocialConnect</string>
+    <string name="app_logo">Uygulama Logosu</string>
+    
+    <!-- Login Screen -->
+    <string name="welcome_message">Hoş geldiniz! Giriş yapın</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="forgot_password">Şifremi Unuttum?</string>
+    <string name="no_account">Hesabınız yok mu?</string>
+    <string name="register">Kayıt Ol</string>
+    
+    <!-- Register Screen -->
+    <string name="create_account">Hesap Oluştur</string>
+    <string name="join_community">Topluluğumuza katılın</string>
+    <string name="first_name">Ad</string>
+    <string name="last_name">Soyad</string>
+    <string name="confirm_password">Şifre Tekrar</string>
+    <string name="or">veya</string>
+    <string name="login_with_google">Google ile giriş</string>
+    <string name="login_with_apple">Apple ile giriş</string>
+    <string name="login_with_twitter">Twitter ile giriş</string>
+    <string name="login_with_tiktok">TikTok ile giriş</string>
+    
+    <!-- Email Verification -->
+    <string name="verify_email">E-posta Doğrula</string>
+    <string name="email_verification">E-posta doğrulama</string>
+    <string name="verification_message">E-posta adresinize gönderilen 6 haneli doğrulama kodunu girin</string>
+    <string name="verify">Doğrula</string>
+    <string name="invalid_code">Geçersiz kod</string>
+    <string name="didnt_receive_code">Kod almadınız mı?</string>
+    <string name="resend">Tekrar Gönder</string>
+    <string name="resend_in_seconds">%d saniye içinde tekrar gönderebilirsiniz</string>
+    <string name="verification_successful">Doğrulama başarılı</string>
+    
+    <!-- Home Screen -->
+    <string name="stories">Hikayeler</string>
+    <string name="whats_on_your_mind">Aklınızdan neler geçiyor?</string>
+    <string name="add_photo">Fotoğraf ekle</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="messages">Mesajlar</string>
+    
+    <!-- Posts -->
+    <string name="sample_username">kullanici_adi</string>
+    <string name="sample_time">2 saat önce</string>
+    <string name="sample_post_content">Bu harika bir paylaşım! Bugün çok güzel bir gün geçirdim.</string>
+    <string name="more_options">Daha fazla seçenek</string>
+    <string name="post_media">Paylaşım medyası</string>
+    <string name="play_video">Video oynat</string>
+    <string name="share">Paylaş</string>
+    <string name="save_post">Paylaşımı kaydet</string>
+    <string name="post_image">Paylaşım resmi</string>
+    <string name="video_post">Video paylaşımı</string>
+    <string name="multiple_photos">Çoklu fotoğraf</string>
+    
+    <!-- Live Stream -->
+    <string name="start_live_stream">Canlı yayın başlat</string>
+    <string name="close">Kapat</string>
+    <string name="switch_camera">Kamerayı değiştir</string>
+    <string name="stream_settings">Yayın ayarları</string>
+    <string name="live">CANLI</string>
+    <string name="add_comment">Yorum ekle</string>
+    <string name="send_comment">Yorum gönder</string>
+    <string name="effects">Efektler</string>
+    <string name="end_stream">Yayını Bitir</string>
+    <string name="go_live">Canlı Yayına Başla</string>
+    <string name="ready_to_go_live">Canlı Yayına Hazır</string>
+    <string name="live_stream_description">Takipçilerinizle gerçek zamanlı etkileşim kurun</string>
+    <string name="stream_title">Yayın başlığı</string>
+    <string name="starting_live_stream">Canlı yayın başlatılıyor...</string>
+    <string name="like_comment">Yorumu beğen</string>
+    
+    <!-- Profile -->
+    <string name="sample_full_name">Kullanıcı Adı Soyadı</string>
+    <string name="sample_bio">Hayatı seven, pozitif enerjili bir insanım. Fotoğraf çekmeyi ve seyahat etmeyi seviyorum.</string>
+    <string name="posts">Paylaşımlar</string>
+    <string name="followers">Takipçi</string>
+    <string name="following">Takip</string>
+    <string name="edit_profile">Profili Düzenle</string>
+    <string name="share_profile">Profili Paylaş</string>
+    <string name="videos">Videolar</string>
+    <string name="saved">Kaydedilenler</string>
+    <string name="no_posts_yet">Henüz paylaşım yok</string>
+    
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="account">Hesap</string>
+    <string name="account_info">Hesap Bilgileri</string>
+    <string name="manage_account_info">Hesap bilgilerinizi yönetin</string>
+    <string name="privacy">Gizlilik</string>
+    <string name="privacy_description">Gizlilik ayarlarınızı düzenleyin</string>
+    <string name="security">Güvenlik</string>
+    <string name="security_description">Güvenlik ayarlarınızı yönetin</string>
+    <string name="push_notifications">Anlık Bildirimler</string>
+    <string name="push_notifications_desc">Anlık bildirimleri açın/kapatın</string>
+    <string name="likes_comments">Beğeni ve Yorumlar</string>
+    <string name="messages_notifications">Mesaj Bildirimleri</string>
+    <string name="appearance">Görünüm</string>
+    <string name="theme">Tema</string>
+    <string name="default_theme">Varsayılan (Mavi)</string>
+    <string name="other">Diğer</string>
+    <string name="language">Dil</string>
+    <string name="default_language">Türkçe</string>
+    <string name="help_support">Yardım ve Destek</string>
+    <string name="help_support_description">Yardım alın ve destek ekibiyle iletişime geçin</string>
+    <string name="about">Hakkında</string>
+    <string name="about_description">Uygulama hakkında bilgi alın</string>
+    <string name="logout">Çıkış Yap</string>
+    
+    <!-- Common -->
+    <string name="back">Geri</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="error">Hata</string>
+    <string name="success">Başarılı</string>
+    <string name="cancel">İptal</string>
+    <string name="ok">Tamam</string>
+</resources>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <!-- Story Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_story"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="36dp"
+        app:cardElevation="0dp">
+
+        <!-- Story Background -->
+        <ImageView
+            android:id="@+id/iv_story_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_story_bg" />
+
+        <!-- Story Border (for viewed/unviewed status) -->
+        <View
+            android:id="@+id/view_story_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/story_border_unviewed" />
+
+        <!-- User Avatar (smaller, centered) -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_avatar"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp" />
+
+        <!-- Add Story Plus Icon (for current user only) -->
+        <ImageView
+            android:id="@+id/iv_add_story"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/circle_background"
+            android:padding="2dp"
+            android:src="@drawable/ic_add"
+            android:visibility="gone"
+            app:tint="@color/primary_blue" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/sample_username"
+        android:textColor="@color/text_primary"
+        android:textSize="11sp" />
+
+</LinearLayout>
+

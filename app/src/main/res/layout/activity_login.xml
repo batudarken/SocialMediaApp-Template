@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Logo ve Başlık -->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/app_logo"
+            android:padding="16dp"
+            android:src="@drawable/ic_social_media"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/primary_blue"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/welcome_message"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+        <!-- Giriş Formu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:hint="@string/email"
+            app:boxStrokeColor="@color/primary_blue"
+            app:hintTextColor="@color/primary_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/primary_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/password"
+            app:boxStrokeColor="@color/primary_blue"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/primary_blue"
+            app:hintTextColor="@color/primary_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_email"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/primary_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Şifremi Unuttum Linki -->
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="8dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/primary_blue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/til_password"
+            app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+        <!-- Giriş Butonu -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/primary_blue"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+        <!-- Progress Bar (başlangıçta gizli) -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_login"
+            app:layout_constraintTop_toTopOf="@+id/btn_login" />
+
+        <!-- Kayıt Ol Linki -->
+        <LinearLayout
+            android:id="@+id/ll_register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/no_account"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/register"
+                android:textColor="@color/primary_blue"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Alt Boşluk -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_register_link" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SocialMediaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_blue_light</item>
+        <item name="colorSecondaryVariant">@color/primary_blue</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Custom font family -->
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        
+        <!-- TextInputLayout style -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+    
+    <!-- Custom font families -->
+    <font-family android:id="@font/roboto_regular">
+        <font android:fontStyle="normal" android:fontWeight="400" android:font="@font/roboto_regular_file" />
+    </font-family>
+    
+    <font-family android:id="@font/roboto_medium">
+        <font android:fontStyle="normal" android:fontWeight="500" android:font="@font/roboto_medium_file" />
+    </font-family>
+    
+    <font-family android:id="@font/roboto_bold">
+        <font android:fontStyle="normal" android:fontWeight="700" android:font="@font/roboto_bold_file" />
+    </font-family>
+    
+    <!-- Custom drawable for circular background -->
+    <drawable name="circle_background">
+        <shape android:shape="oval">
+            <solid android:color="@color/primary_blue_light" />
+        </shape>
+    </drawable>
+    
+    <drawable name="circle_background_light">
+        <shape android:shape="oval">
+            <solid android:color="@color/background_white" />
+            <stroke android:width="1dp" android:color="@color/primary_blue" />
+        </shape>
+    </drawable>
+    
+    <drawable name="circle_background_dark">
+        <shape android:shape="oval">
+            <solid android:color="#80000000" />
+        </shape>
+    </drawable>
+    
+    <drawable name="circle_background_dark_transparent">
+        <shape android:shape="oval">
+            <solid android:color="#40000000" />
+        </shape>
+    </drawable>
+    
+    <drawable name="circle_background_blue">
+        <shape android:shape="oval">
+            <solid android:color="@color/primary_blue" />
+        </shape>
+    </drawable>
+    
+    <drawable name="circle_background_red">
+        <shape android:shape="oval">
+            <solid android:color="@color/live_red" />
+        </shape>
+    </drawable>
+    
+    <!-- Rounded background for text views/edit texts -->
+    <drawable name="rounded_background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background_white" />
+            <corners android:radius="8dp" />
+            <stroke android:width="1dp" android:color="@color/primary_blue" />
+        </shape>
+    </drawable>
+    
+    <!-- Verification code input background -->
+    <drawable name="verification_code_background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background_white" />
+            <corners android:radius="8dp" />
+            <stroke android:width="1dp" android:color="@color/text_secondary" />
+        </shape>
+    </drawable>
+    
+    <!-- Story border for unviewed stories -->
+    <drawable name="story_border_unviewed">
+        <shape android:shape="oval">
+            <stroke android:width="3dp" android:color="@color/primary_blue" />
+        </shape>
+    </drawable>
+    
+    <!-- Story border for viewed stories -->
+    <drawable name="story_border_viewed">
+        <shape android:shape="oval">
+            <stroke android:width="2dp" android:color="@color/text_secondary" />
+        </shape>
+    </drawable>
+    
+    <!-- Live comment background -->
+    <drawable name="live_comment_background">
+        <shape android:shape="rectangle">
+            <solid android:color="#80000000" />
+            <corners android:radius="16dp" />
+        </shape>
+    </drawable>
+    
+    <!-- Live status background -->
+    <drawable name="live_status_background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/live_red" />
+            <corners android:radius="12dp" />
+        </shape>
+    </drawable>
+    
+    <!-- Live dot -->
+    <drawable name="live_dot">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </drawable>
+    
+    <!-- Live stream overlay gradient -->
+    <drawable name="live_stream_overlay">
+        <gradient
+            android:angle="270"
+            android:endColor="#00000000"
+            android:startColor="#B3000000" />
+    </drawable>
+    
+    <!-- Profile background gradient -->
+    <drawable name="profile_background_gradient">
+        <gradient
+            android:angle="270"
+            android:endColor="@color/primary_blue"
+            android:startColor="@color/primary_blue_dark" />
+    </drawable>
+    
+    <!-- Tab layout background -->
+    <drawable name="tab_layout_background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background_white" />
+            <corners android:radius="12dp" />
+            <stroke android:width="1dp" android:color="@color/background_light" />
+        </shape>
+    </drawable>
+    
+    <!-- Gradient overlay for post stats -->
+    <drawable name="gradient_overlay_bottom">
+        <gradient
+            android:angle="90"
+            android:endColor="#B3000000"
+            android:startColor="#00000000" />
+    </drawable>
+
+</resources>
+

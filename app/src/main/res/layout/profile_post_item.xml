@@ -1,0 +1,112 @@
+<?xml version="10.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="2dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Post Image -->
+        <ImageView
+            android:id="@+id/iv_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/post_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_post_thumbnail" />
+
+        <!-- Video Indicator -->
+        <ImageView
+            android:id="@+id/iv_video_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_background_dark_transparent"
+            android:contentDescription="@string/video_post"
+            android:padding="4dp"
+            android:src="@drawable/ic_play_arrow"
+            android:visibility="gone"
+            app:tint="@android:color/white" />
+
+        <!-- Multiple Photos Indicator -->
+        <ImageView
+            android:id="@+id/iv_multiple_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_background_dark_transparent"
+            android:contentDescription="@string/multiple_photos"
+            android:padding="4dp"
+            android:src="@drawable/ic_collections"
+            android:visibility="gone"
+            app:tint="@android:color/white" />
+
+        <!-- Like Count Overlay -->
+        <LinearLayout
+            android:id="@+id/ll_stats_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient_overlay_bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="6dp"
+            android:visibility="gone">
+
+            <!-- Like Count -->
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_favorite_small"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="125"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Comment Count -->
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_comment_small"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="32"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+

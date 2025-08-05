@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/live_comment_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="8dp">
+
+    <!-- User Avatar (Small) -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/default_avatar_small"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="1dp" />
+
+    <!-- Comment Content -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Username and Comment in same line for space efficiency -->
+        <TextView
+            android:id="@+id/tv_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="13sp">
+
+            <!-- This will be formatted in code: "username: comment text" -->
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- Like Button (for comments) -->
+    <ImageButton
+        android:id="@+id/btn_like_comment"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/like_comment"
+        android:src="@drawable/ic_favorite_border_small"
+        app:tint="@android:color/white" />
+
+</LinearLayout>
+
